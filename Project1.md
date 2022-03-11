@@ -25,13 +25,13 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
 
-• Load balancing is effective at preventing DDoS attacks. The advantage   of the Jump Box is to provide a gateway router to your private network ensuring that all of your other machines in the network do not directly face the internet. This then provides a more secure network.
+- Load balancing is effective at preventing DDoS attacks. The advantage   of the Jump Box is to provide a gateway router to your private network ensuring that all of your other machines in the network do not directly face the internet. This then provides a more secure network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Network and system Logs.
 
-• Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
 
-• metric data from your target servers, this could be operating system metrics such as CPU or memory or data related to services running on the server. It can also be used to monitor other beats and ELK stack itself.
+- metric data from your target servers, this could be operating system metrics such as CPU or memory or data related to services running on the server. It can also be used to monitor other beats and ELK stack itself.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -49,7 +49,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-• 120.17.224.15
+- 120.17.224.15
 
 Machines within the network can only be accessed by Jump box.
 The ELK server can be accessed from the Web DVWA Servers and Jump Box machines.
@@ -70,10 +70,10 @@ The main advantage of automating configuration with Ansible is that it enables I
 
 The playbook implements the following tasks:
 
-• Configure Elk VM with Docker
-• Install docker.io
-• Install pip3
-• Download and launch a docker elk container
+- Configure Elk VM with Docker
+- Install docker.io
+- Install pip3
+- Download and launch a docker elk container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -85,19 +85,19 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-• Web_1 10.0.0.7
-• Web_2 10.0.0.8 
+- Web_1 10.0.0.7
+- Web_2 10.0.0.8 
 
 We have installed the following Beats on these machines:
 
-• FileBeats
-• MetricBeats 
+- FileBeats
+- MetricBeats 
 
 These Beats allow us to collect the following information from each machine:
 
-• Filebeat collects data about the file system, which files have changed  and when they changed.
+- Filebeat collects data about the file system, which files have changed  and when they changed.
 
-• Metricbeat collects machine metrics, such as uptime.
+- Metricbeat collects machine metrics, such as uptime.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
