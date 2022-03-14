@@ -101,7 +101,7 @@ SSH into the control node and follow the steps below:
 
 - Copy the YAML file to /etc/ansible.
 
-- Update the /etc/ansible/hosts file to include host group, private IP address and the folliwng 'ansible_python_interpreter=/usr/bin/python3'
+- Update the /etc/ansible/hosts file to include host group, private IP address and the following 'ansible_python_interpreter=/usr/bin/python3'
 
 - Run the playbook, and navigate to curl localhost/setup.php to check that the installation worked as expected.
 
